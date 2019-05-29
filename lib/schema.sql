@@ -15,6 +15,12 @@ CREATE TABLE authors (
   name TEXT
 );
 
+CREATE TABLE character_books (
+  id INTEGER PRIMARY KEY,
+  character_id INTEGER,
+  book_id INTEGER
+);
+
 CREATE TABLE books (
   id INTEGER PRIMARY KEY,
   title TEXT,
